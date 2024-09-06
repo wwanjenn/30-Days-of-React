@@ -8,7 +8,6 @@ const FrontEndTechCard = () => {
         background: "black",
         margin: "auto",
         marginTop: "30px",
-        marginBottom: "30px",
         width: "95%",
         height: "50vh",
         border: "10px solid black",
