@@ -16,7 +16,7 @@ const Data =(props)=> {
             p: "Sign up with your email to recieve news and updates"
         }
     }
-    return({dataNeed});
+    return(Data[dataNeed]);
 }
 
 export default Data;

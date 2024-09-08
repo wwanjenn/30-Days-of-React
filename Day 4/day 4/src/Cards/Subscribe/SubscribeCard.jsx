@@ -1,5 +1,6 @@
 import React from "react";
 import UserForm from "./UserForm.jsx";
+import Data from '../../Data.jsx'
 
 const SubscribeCard = () =>{
     const divstyle = {
