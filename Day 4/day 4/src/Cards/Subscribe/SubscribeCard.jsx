@@ -27,12 +27,15 @@ const SubscribeCard = () =>{
         fontWeight: "200",
         fontSize: "20px"
     };
+
+    const subscribeData = Data({name: 'Subscribe'});
+    const {title,p} = subscribeData;
     
     return(
         <>
             <div style={divstyle}>
-                <h1 style={h1style}>Subscribe</h1>
-                <p style={pstyle}>Sign up with your email to recieve news and updates</p>
+                <h1 style={h1style}>{title}</h1>
+                <p style={pstyle}>{p}</p>
                 <UserForm></UserForm>
             </div>
         </>

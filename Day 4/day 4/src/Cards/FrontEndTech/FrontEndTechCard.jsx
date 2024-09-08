@@ -1,8 +1,6 @@
 import React from "react";
-import cssImg from '../../assets/css.svg';
-import htmlImg from '../../assets/html.svg';
-import reactImg from '../../assets/react.svg';
-import jsImg from '../../assets/js.svg';
+import Data from "../../Data.jsx"
+
 const FrontEndTechCard = () => {
     const divstyle = {
         background: "black",
@@ -34,15 +32,18 @@ const FrontEndTechCard = () => {
         height: "225px"
     };
 
+    const frontEndData = Data({ name: 'FrontEnd' });
+    const {title,imgs} = frontEndData;
+
     return (
         <>
             <div className="Card" style={divstyle}>
-                <h1 style={h1style}>Front End Technologies</h1>
+                <h1 style={h1style}>{title}</h1>
                 <div className="Imagediv" >
-                    <img style={imgstyle} src={htmlImg} alt="img" />
-                    <img style={imgstyle} src={cssImg} alt="img" />
-                    <img style={jsimgstyle} src={jsImg} alt="img" />
-                    <img style={imgstyle} src={reactImg} alt="img" />
+                    <img style={imgstyle} src={imgs.htmlImg} alt="img" />
+                    <img style={imgstyle} src={imgs.cssImg} alt="img" />
+                    <img style={jsimgstyle} src={imgs.jsImg} alt="img" />
+                    <img style={imgstyle} src={imgs.reactImg} alt="img" />
                 </div>
             </div>
         </>
