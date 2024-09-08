@@ -14,6 +14,24 @@ const Data =(props)=> {
         Subscribe :{
             title: "Subscribe",
             p: "Sign up with your email to recieve news and updates"
+        },
+
+        User : {
+            img: "",
+            name: "WANJIN MAGLANGIT",
+            title: "Junior Developer, Philippines",
+            skills: ["HTML","CSS","JS","React","Node","Python","NumPy","MYSQL","Git"],
+            date: "Joined Sept 7, 2024"
+        },
+
+        color: {
+            colors: [
+                "#518cef",
+                "#3b10c4",
+                "#9aede6",
+                "#8ee763",
+                "#a30dd0"
+            ]
         }
     }
     return(Data[dataNeed]);

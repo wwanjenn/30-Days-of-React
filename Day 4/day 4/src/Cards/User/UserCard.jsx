@@ -1,5 +1,7 @@
 import React from "react";
 import SkillCardCont from "./SkillCardCont";
+import Data from "../../Data";
+
 const UserCard = () =>{
     const divstyle = {
         background: "black",
@@ -32,15 +34,20 @@ const UserCard = () =>{
         marginLeft: "20px",
         marginTop: "15px",
     }
+
+    
+    const UserData = Data({ name: 'User' });
+    const {title,img,date,name} = UserData;
+
     return(
         <>
             <div style={divstyle}>
-                <img style={imgstyle} src="https://placehold.co/400x400" alt="" />
-                <h3 style={h3style}>WANJIN MAGLANGIT</h3>
-                <p style={pstyle}>Junior Developer, Philippines</p>
+                <img style={imgstyle} src={img} alt="" />
+                <h3 style={h3style}>{name}</h3>
+                <p style={pstyle}>{title} </p>
                 <h3 style={h3style}>SKILLS</h3>
                 <SkillCardCont></SkillCardCont><br/><br/>
-                <p style={pstyle}>Joined Sept 7, 2024</p>
+                <p style={pstyle}>{date} </p>
             </div>
         </>
     );
