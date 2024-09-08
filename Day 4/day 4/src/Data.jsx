@@ -17,7 +17,7 @@ const Data =(props)=> {
         },
 
         User : {
-            img: "",
+            img: "https://placehold.co/400x400",
             name: "WANJIN MAGLANGIT",
             title: "Junior Developer, Philippines",
             skills: ["HTML","CSS","JS","React","Node","Python","NumPy","MYSQL","Git"],

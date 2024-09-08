@@ -1,14 +1,8 @@
 import React from "react";
 import ColorCard from "./ColorCard";
+import Data from "../../Data.jsx"
 
 const ColorCardCont = () => {
-    const colors = [
-        "#518cef",
-        "#3b10c4",
-        "#9aede6",
-        "#8ee763",
-        "#a30dd0"
-    ];
     const divstyle = {
         background: "black",
         margin: "auto",
@@ -21,6 +15,9 @@ const ColorCardCont = () => {
         paddingBottom: "10px",
         marginBottom: "30px"
     };
+
+    const ColorData = Data({name: "color"});
+    const {colors} = ColorData;
     return(<>
         <div style={divstyle}>
         {colors.map((color, index) => (
